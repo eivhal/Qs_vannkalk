@@ -1,0 +1,13 @@
+print("Kalkulator for beregning av største samtidige vannmengde/"
+      "for tappevann")
+Q = input("Normalvannmengde:")
+q1 = input("Største vannmengde i ett enkelt utstyr")
+Q = float(Q)
+q1 = float(q1)
+
+print("Sum normalvannmengde: " + str(Q) + "l/s")
+print ("Største tappested: " + str(q1) + "l/s)")
+
+qs = q1 + 0.015*(Q - q1) + 0.17*(Q - q1)**0.5
+
+print(qs)
